@@ -1,8 +1,5 @@
 package co.edu.ucc.jose.abstractfactory;
 
-import co.edu.ucc.jose.abstractfactory.Cuenta;
-import co.edu.ucc.jose.abstractfactory.Tarjeta;
-
 import java.util.Base64;
 
 public interface BancoFactory {
