@@ -3,16 +3,6 @@ package co.edu.ucc.jose.singleton;
 
 import java.util.Base64;
 
-/**
- * -----------------------------------------
- * PROGRAMA: Banco Singleton
- * AUTOR: Jose Emilio Martinez Urgelles
- * PROGRAMA: Ingeniería de Sistemas
- * UNIVERSIDAD: Universidad Cooperativa de Colombia
- * AÑO: 2025
- * -----------------------------------------
- */
-
  public class Banco {
     private static Banco instance;
     private String nombreBanco;
