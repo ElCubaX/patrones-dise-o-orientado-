@@ -22,8 +22,7 @@ import java.util.Base64;
 
         analgesico.administrar();
         antibiotico.administrar();
-
-        // Mostrar identidad codificada
+        
         System.out.println("Identidad codificada: " + getIdentidad());
     }
 
