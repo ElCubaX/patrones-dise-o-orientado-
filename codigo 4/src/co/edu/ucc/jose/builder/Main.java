@@ -10,6 +10,18 @@ package co.edu.ucc.jose.builder;
 
 public class Main {
     public static void main(String[] args) {
+
+
+        System.out.println("======================================================");
+        System.out.println(" Nombre del archivo: Main.java");
+        System.out.println(" Paquete: co.edu.ucc.jose.builder");
+        System.out.println(" Autor: Jose Emilio Martinez Urgelles");
+        System.out.println(" Descripción: Prueba del Patron con Pacientes.");
+        System.out.println(" Fecha: 2025-02-19");
+        System.out.println("======================================================\n");
+
+
+
         Paciente paciente = new Paciente("Juan Pérez", 30, "Gripe");
 
         System.out.println("Datos del Paciente:");
