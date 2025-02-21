@@ -1,20 +1,28 @@
-// Archivo: Main.java
+// ======================================================
+// Nombre del archivo: Main.java
+// Paquete: co.edu.ucc.jose.builder
+// Autor: Jose Emilio Martinez Urgelles
+// Descripción: Clase principal para probar la creación de un Paciente.
+// Fecha: 2025-02-19
+// ======================================================
+
 package co.edu.ucc.jose.builder;
 
 public class Main {
     public static void main(String[] args) {
-        Paciente paciente1 = new Paciente("Juan Pérez", 30, "Gripe");
+        Paciente paciente = new Paciente("Juan Pérez", 30, "Gripe");
 
         System.out.println("Datos del Paciente:");
-        System.out.println("Nombre: " + paciente1.getNombre());
-        System.out.println("Edad: " + paciente1.getEdad());
-        System.out.println("Diagnóstico: " + paciente1.getDiagnostico());
+        System.out.println("Nombre: " + paciente.getNombre());
+        System.out.println("Edad: " + paciente.getEdad());
+        System.out.println("Diagnóstico: " + paciente.getDiagnostico());
 
-        paciente1.setNombre("María López");
-        paciente1.setEdad(40);
-        paciente1.setDiagnostico("Faringitis");
-        
+        paciente.setNombre("María López");
+        paciente.setEdad(40);
+        paciente.setDiagnostico("Faringitis");
+
         System.out.println("\nDatos del Paciente Actualizados:");
-        System.out.println(paciente1);
+        System.out.println(paciente);
+        System.out.println("Identidad codificada en Base64: " + paciente.getIdentidad());
     }
 }

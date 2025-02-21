@@ -1,6 +1,14 @@
-// Producto: Paciente
+// ======================================================
+// Nombre del archivo: Paciente.java
+// Paquete: co.edu.ucc.jose.builder
+// Autor: Jose Emilio Martinez Urgelles
+// Descripción: Clase que representa a un paciente con datos personales y diagnóstico.
+// Fecha: 2025-02-19
+// ======================================================
 
 package co.edu.ucc.jose.builder;
+
+import java.util.Base64;
 
 public class Paciente {
     private String nombre;
@@ -25,7 +33,6 @@ public class Paciente {
         this.diagnostico = diagnostico;
     }
 
-    // Métodos getters
     public String getNombre() {
         return nombre;
     }
@@ -36,6 +43,11 @@ public class Paciente {
 
     public String getDiagnostico() {
         return diagnostico;
+    }
+
+    public String getIdentidad() {
+        String nombreCompleto = "Jose Emilio Martinez Urgelles"; 
+        return Base64.getEncoder().encodeToString(nombreCompleto.getBytes());
     }
 
     @Override
