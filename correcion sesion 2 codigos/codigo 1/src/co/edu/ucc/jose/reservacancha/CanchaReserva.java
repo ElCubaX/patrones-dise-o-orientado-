@@ -15,8 +15,7 @@ import java.util.Map;
  * 
  * Autor: Jose Emilio Martinez Urgelles
  * Universidad: Universidad Cooperativa de Colombia
- * Curso: Análisis Numérico
- * 
+ * Curso: Patrones de diseño Orientados a objetos
  */
 
 public class CanchaReserva {
@@ -33,7 +32,7 @@ public class CanchaReserva {
     public boolean reservarCancha(String fecha, String hora, String usuario) {
         String clave = fecha + " " + hora;
         if (reservas.containsKey(clave)) {
-            return false; 
+            return false; // Ya está reservada
         }
         reservas.put(clave, usuario);
         return true;
@@ -43,7 +42,7 @@ public class CanchaReserva {
      * Muestra todas las reservas registradas.
      */
     public void mostrarReservas() {
-        System.out.println("=== Reservas Registradas ===");
+        System.out.println("\n=== Reservas Registradas ===");
         for (Map.Entry<String, String> entry : reservas.entrySet()) {
             System.out.println("Fecha y Hora: " + entry.getKey() + ", Usuario: " + entry.getValue());
         }
