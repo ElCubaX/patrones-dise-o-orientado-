@@ -1,26 +1,21 @@
-package co.edu.ucc.jose.singleton;
+package co.edu.ucc.jose.factorymethod;
 
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 import java.util.Base64;
 
-public class Logger {
-    private static Logger instance;
-    
-    private Logger() {}
+public class Main {
+    public static void main(String[] args) {
+        encabezadoPgm(); 
 
-    public static Logger getInstance() {
-        if (instance == null) {
-            instance = new Logger();
-        }
-        return instance;
+        Vehiculo v1 = FabricaVehiculos.crearVehiculo("electrico");
+        if (v1 != null) v1.conducir();
+
+        String identidadCodificada = getIdentidad();
+        System.out.println("Identidad codificada (Base64): " + identidadCodificada);
     }
 
-    public void log(String message) {
-        System.out.println("[LOG] " + message);
-    }
-
-    public static void encabezadoPgm(){
+    public static void encabezadoPgm() {
         String nombre = "Jose Emilio Martinez Urgelles";
         String campus = "Universidad Cooperativa de Colombia, Campus Cali";
         String repositorioGit = "https://github.com/habolanos/ucc-estructuras/blob/master/sesion04/ejercicios/1-algoritmo-01/PgmAlgoritmo01.java";
@@ -40,7 +35,6 @@ public class Logger {
 
     public static String getIdentidad() {
         String nombre = "Jose Emilio Martinez Urgelles";
-        String codificado = Base64.getEncoder().encodeToString(nombre.getBytes());
-        return codificado;
+        return Base64.getEncoder().encodeToString(nombre.getBytes());
     }
 }
