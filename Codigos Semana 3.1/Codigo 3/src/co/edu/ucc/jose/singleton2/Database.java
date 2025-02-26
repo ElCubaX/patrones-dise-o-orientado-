@@ -26,7 +26,7 @@ public class Database {
     public static void encabezadoPgm() {
         String nombre = "Jose Emilio Martinez Urgelles";
         String campus = "Universidad Cooperativa de Colombia, Campus Cali";
-        String repositorioGit = "https://github.com/habolanos/ucc-estructuras/blob/master/sesion04/ejercicios/1-algoritmo-01/PgmAlgoritmo01.java";
+        String repositorioGit = "https://github.com/ElCubaX/patrones-dise-o-orientado-/tree/main/Codigos%20Semana%203.1/Codigo%203/src/co/edu/ucc/jose/singleton2";
 
         LocalDateTime ahora = LocalDateTime.now();
         DateTimeFormatter formateador = DateTimeFormatter.ofPattern("dd/MM/yyyy HH:mm:ss");
