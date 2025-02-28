@@ -74,6 +74,10 @@
          System.out.println("Fecha: 27 de febrero de 2025");
          System.out.println("=============================================");
          System.out.println("=== Cálculo de Liquidación de Pensiones ===");
+         System.out.println("=== Historia de Usuario ===");
+         System.out.println("=== Un sistema de liquidación de pensiones requiere procesar varias leyes de liquidación de pensión para realizar el pago mensual, para ello se necesita que el salario de pensión sea liquidado con base en la ley a la que pertenece ===");
+
+
  
          totalPago += calcularYLiquidar("Ley 78", 3, 850000);
          totalPago += calcularYLiquidar("Ley 86", 2, 930000);

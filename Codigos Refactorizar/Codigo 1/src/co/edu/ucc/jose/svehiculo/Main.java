@@ -7,6 +7,8 @@ public class Main {
         System.out.println("|  Campus       : Universidad Cooperativa de Colombia, Campus Cali");
         System.out.println("|  Fecha y hora : 25/02/2025 19:45:12");
         System.out.println("|  Repositorio Git : https://github.com/ElCubaX/patrones-dise-o-orientado-/tree/main/Codigos%20Refactorizar/Codigo%201/src/co/edu/ucc/jose/svehiculo");
+        System.out.println("|  Historia de Usuario");
+        System.out.println("|  Un sistema de vehículos necesita eliminar la creación manual de objetos y aplicar Factory Method.");
         System.out.println("--------------------------------------------------\n");
 
         Vehiculo v1 = Vehiculo.crearVehiculo("electrico");
