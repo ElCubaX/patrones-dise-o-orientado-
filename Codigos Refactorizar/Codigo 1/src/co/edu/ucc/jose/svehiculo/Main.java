@@ -6,7 +6,7 @@ public class Main {
         System.out.println("|  Nombre       : Jose Emilio Martinez Urgelles");
         System.out.println("|  Campus       : Universidad Cooperativa de Colombia, Campus Cali");
         System.out.println("|  Fecha y hora : 25/02/2025 19:45:12");
-        System.out.println("|  Repositorio Git : https://github.com/habolanos/ucc-estructuras/blob/master/sesion04/ejercicios/1-algoritmo-01/PgmAlgoritmo01.java");
+        System.out.println("|  Repositorio Git : https://github.com/ElCubaX/patrones-dise-o-orientado-/tree/main/Codigos%20Refactorizar/Codigo%201/src/co/edu/ucc/jose/svehiculo");
         System.out.println("--------------------------------------------------\n");
 
         Vehiculo v1 = Vehiculo.crearVehiculo("electrico");

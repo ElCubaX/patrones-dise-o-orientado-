@@ -7,7 +7,7 @@ import java.util.Base64;
 |  Nombre       : Jose Emilio Martinez Urgelles
 |  Campus       : Universidad Cooperativa de Colombia, Campus Cali
 |  Fecha y hora : 25/02/2025 19:45:12
-|  Repositorio Git : https://github.com/habolanos/ucc-estructuras/blob/master/sesion04/ejercicios/1-algoritmo-01/PgmAlgoritmo01.java
+|  Repositorio Git : https://github.com/ElCubaX/patrones-dise-o-orientado-/tree/main/Codigos%20Refactorizar/Codigo%201/src/co/edu/ucc/jose/svehiculo
 --------------------------------------------------
 */
 
