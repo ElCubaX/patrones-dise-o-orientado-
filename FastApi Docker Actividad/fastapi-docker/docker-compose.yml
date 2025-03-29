@@ -1,0 +1,11 @@
+version: '3.8'
+
+services:
+  api:
+    build: .
+    deploy:
+      replicas: 3
+    ports:
+      - "0:8000"  # Puerto dinámico en el host, evita conflicto
+    environment:
+      - PORT=8000

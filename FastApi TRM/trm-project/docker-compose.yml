@@ -1,0 +1,17 @@
+version: "3.8"
+
+services:
+  trm-api:
+    build: ./api-trm  # Antes decía ./trm-project, pero la carpeta real es api-trm
+    container_name: trm-api
+    ports:
+      - "8000:8000"
+
+  trm-client:
+    build: ./client-trm  # Antes decía ./trm-client, pero la carpeta real es client-trm
+    container_name: trm-client
+    environment:
+      - INTERVAL=5  
+      - API_URL=http://trm-api:8000/trm
+    depends_on:
+      - trm-api
