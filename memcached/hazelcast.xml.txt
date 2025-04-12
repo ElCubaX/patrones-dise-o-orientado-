@@ -1,0 +1,5 @@
+<hazelcast>
+    <network>
+        <rest-api enabled="true" />
+    </network>
+</hazelcast>
